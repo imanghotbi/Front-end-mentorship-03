@@ -1,0 +1,1477 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rosario:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto:wght@300&family=Rosario:wght@300&display=swap");
+/*start minix*/
+/*end minix*/
+/* all element*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+/* end all element*/
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 1000vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 300px) {
+  /*start main contianer*/
+  .main-container {
+    width: 70%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16rem;
+    background-color: #3498DB;
+    margin-top: 2rem;
+    background-position: center;
+    background-size: cover;
+  }
+  .main-container .main-header {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+  }
+  .main-container .main-header .main-title {
+    font-family: "Raleway";
+    color: #16A085;
+  }
+  .main-container .main-header .account-container {
+    width: 100px;
+    height: 35px;
+    display: flex;
+    background-color: #f5f6fa;
+    border-radius: 1rem;
+  }
+  .main-container .main-header .account-container .account-title {
+    line-height: 36px;
+    margin-left: 4px;
+    font-family: "roboto";
+    color: #16A085;
+  }
+  .main-container .main-header .account-container i {
+    font-size: 2rem;
+    line-height: 35px;
+    margin-left: 1rem;
+    color: #B75D5D;
+  }
+  .main-container .search-container {
+    width: 100%;
+    height: auto;
+    border-radius: 1.5rem;
+    background-color: #f5f6fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-container .search-container .input-container {
+    width: 150px;
+    height: 60px;
+    padding: 1rem;
+    border-bottom: 2px solid #485460;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-container .search-container .input-container h2 {
+    font-family: "Roboto";
+  }
+  .main-container .search-container .input-container input {
+    width: 13.5rem;
+    border: none;
+    font-size: 1rem;
+    padding: 1rem 4rem;
+    background-color: #f5f6fa;
+  }
+  .main-container .search-container .input-container input:focus {
+    outline: none;
+  }
+  .main-container .search-container .search-button {
+    width: 90%;
+    height: 3.2rem;
+    background-color: #16A085;
+    color: #f5f6fa;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    font-family: "Roboto";
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+
+  /*end main container*/
+  /*start aside header*/
+  .aside-container {
+    width: 38%;
+    margin: 2rem 1px;
+  }
+
+  .aside-header {
+    width: 100%;
+    height: auto;
+  }
+  .aside-header .nav-bar {
+    height: 3rem;
+    background-color: #3498DB;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .aside-header .nav-bar h1 {
+    color: #f5f6fa;
+    font-size: 0.9rem;
+    padding: 2rem 2rem;
+    font-weight: 100;
+    font-family: "rosario";
+  }
+  .aside-header .nav-bar i {
+    color: #f5f6fa;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    font-weight: 100;
+  }
+  .aside-header .nav-image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-image: url("../image/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .aside-header .nav-image h1 {
+    color: #f5f6fa;
+    font-size: 0.7rem;
+    padding: 2rem 2rem;
+    font-weight: 100;
+    font-family: "roboto";
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+  }
+  .aside-header .nav-image button {
+    width: 60px;
+    height: 20px;
+    color: #000000;
+    font-size: 0.7rem;
+    padding: 0rem 0rem;
+    font-weight: 100;
+    margin-left: 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0px 20px;
+    font-family: "roboto";
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  /*end aside header*/
+  /*start main aside part*/
+  .aside-main {
+    width: 100%;
+    height: 1170px;
+    background-color: #eccc68;
+  }
+  .aside-main .title {
+    color: #485460;
+    font-size: 1rem;
+    padding: 1rem 0;
+    font-weight: 100;
+    font-family: "rosario";
+    text-align: center;
+  }
+  .aside-main .image-list {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    margin: 1rem auto;
+  }
+  .aside-main .image-list .image-list-item {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    list-style: none;
+    background-position: center;
+    background-size: cover;
+  }
+  .aside-main .image-list .image-list-item span {
+    color: #f5f6fa;
+    font-size: 1rem;
+    padding: 2rem 1rem;
+    font-weight: 600;
+    font-family: "roboto";
+  }
+  .aside-main .picture {
+    width: 85%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background-image: url("../image/b.jpg"), linear-gradient(rgba(0, 0, 0, 0.8), rgba(100, 100, 100, 0.9));
+    background-position: center;
+    background-size: cover;
+    margin: 1.5rem auto;
+  }
+  .aside-main .picture h1 {
+    color: #a4b0be;
+    font-size: 1rem;
+    padding: 0.3rem 2rem;
+    font-weight: 900;
+    font-size: "roboto";
+  }
+  .aside-main .picture span {
+    color: #a4b0be;
+    font-size: 1rem;
+    padding: 0.3rem 2rem;
+    font-weight: 900;
+    font-size: "roboto";
+  }
+  .aside-main .picture button {
+    width: 45px;
+    height: 30px;
+    margin: 1rem 1.5rem;
+    font-family: roboto;
+    color: #1e272e;
+    font-size: 0.8rem;
+    padding: 0 0;
+    font-weight: 100;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .aside-main .card-container {
+    width: 100%;
+    height: 300px;
+    margin: 5px auto;
+    background-color: #eccc68;
+  }
+  .aside-main .card-container .card-title {
+    color: #a4b0be;
+    font-size: 1.8rem;
+    padding: 2rem 2rem;
+    font-weight: 100;
+    font-family: "rosario";
+  }
+  .aside-main .card-container .card-list {
+    width: inherit;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin: 0 auto;
+  }
+  .aside-main .card-container .card-list .card-list-item {
+    width: 100px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    list-style: none;
+    border: 1px solid #2C3A47;
+    position: relative;
+  }
+  .aside-main .card-container .card-list .card-list-item .card-like {
+    width: 28px;
+    height: 28px;
+    border-radius: 100px;
+    position: absolute;
+    background-color: #f5f6fa;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    transition: all 1s ease;
+  }
+  .aside-main .card-container .card-list .card-list-item .card-like:hover {
+    background-color: #eb4d4b;
+  }
+  .aside-main .card-container .card-list .card-list-item .card-like i {
+    line-height: 28px;
+    display: block;
+    margin: 2px 4px;
+    font-size: 20px;
+  }
+  .aside-main .card-container .card-list .card-list-item .card-img {
+    width: 99px;
+    height: 220px;
+    border-bottom: 1px solid #2C3A47;
+    margin: 0 0;
+  }
+  .aside-main .card-container .card-list .card-list-item .card-txt {
+    height: 40px;
+    text-align: center;
+    background-color: #f6e58d;
+    font-size: 0.6rem;
+    padding: 0.3rem;
+    font-family: "roboto";
+  }
+
+  /*end main aside part*/
+  /*start footer aside part*/
+  .footer {
+    width: 100%;
+    height: 300px;
+    background-color: #eccc68;
+    margin-top: 2rem;
+  }
+  .footer .list-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 10px;
+    border-top: 1px solid #3498DB;
+  }
+  .footer .list-container .link-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .list-container .link-list .link-list-item {
+    width: auto;
+    font-size: 1.1rem;
+    font-family: "rosario";
+    font-weight: bold;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  .footer .list-container .social-link-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .list-container .social-link-list .social-link-item {
+    width: auto;
+    margin-top: 5px;
+    margin-right: 10px;
+    font-size: 1.5rem;
+  }
+  .footer .list-container .social-link-list .social-link-item a {
+    text-decoration: none;
+    color: #3498DB;
+    font-size: 1.5rem;
+    font-family: "rosario";
+  }
+  .footer .list-container .social-link-list .social-link-item i {
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+  }
+  .footer .footer-txt {
+    margin-top: 200px;
+    font-family: "rosario";
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (min-width: 700px) {
+  /*start main contianer*/
+  .main-container {
+    width: 70%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 26rem;
+    background-color: #3498DB;
+    margin-top: 2rem;
+    background-position: center;
+    background-size: cover;
+  }
+  .main-container .main-header {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+  }
+  .main-container .main-header .main-title {
+    font-family: "Raleway";
+    color: #16A085;
+  }
+  .main-container .main-header .account-container {
+    width: 100px;
+    height: 35px;
+    display: flex;
+    background-color: #f5f6fa;
+    border-radius: 1rem;
+  }
+  .main-container .main-header .account-container .account-title {
+    line-height: 36px;
+    margin-left: 4px;
+    font-family: "roboto";
+    color: #16A085;
+  }
+  .main-container .main-header .account-container i {
+    font-size: 2rem;
+    line-height: 35px;
+    margin-left: 1rem;
+    color: #B75D5D;
+  }
+  .main-container .search-container {
+    width: 100%;
+    height: 80px;
+    border-radius: 1.5rem;
+    background-color: #f5f6fa;
+    display: flex;
+    align-items: center;
+  }
+  .main-container .search-container .input-container {
+    width: 150px;
+    height: 60px;
+    padding: 1rem;
+    border-right: 2px solid #485460;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-container .search-container .input-container h2 {
+    font-family: "Roboto";
+  }
+  .main-container .search-container .input-container input {
+    width: 13.5rem;
+    border: none;
+    font-size: 1rem;
+    padding: 1rem 4rem;
+    background-color: #f5f6fa;
+  }
+  .main-container .search-container .input-container input:focus {
+    outline: none;
+  }
+  .main-container .search-container .search-button {
+    width: 10%;
+    height: 3.2rem;
+    background-color: #16A085;
+    color: #f5f6fa;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    font-family: "Roboto";
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+
+  /*end main container*/
+  /*start aside header*/
+  .aside-container {
+    width: 38%;
+    margin: 2rem 1px;
+  }
+
+  .aside-header {
+    width: 100%;
+    height: auto;
+  }
+  .aside-header .nav-bar {
+    height: 6rem;
+    background-color: #3498DB;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .aside-header .nav-bar h1 {
+    color: #f5f6fa;
+    font-size: 2.4rem;
+    padding: 2rem 2rem;
+    font-weight: 100;
+    font-family: "rosario";
+  }
+  .aside-header .nav-bar i {
+    color: #f5f6fa;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    font-weight: 100;
+  }
+  .aside-header .nav-image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    background-image: url("../image/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .aside-header .nav-image h1 {
+    color: #f5f6fa;
+    font-size: 1.8rem;
+    padding: 2rem 2rem;
+    font-weight: 100;
+    font-family: "roboto";
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+  }
+  .aside-header .nav-image button {
+    width: 100px;
+    height: 40px;
+    color: #000000;
+    font-size: 2rem;
+    padding: 0rem 0rem;
+    font-weight: 100;
+    margin-left: 3rem;
+    border: none;
+    outline: none;
+    border-radius: 0px 20px;
+    font-family: "roboto";
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  /*end aside header*/
+  /*start main aside part*/
+  .aside-main {
+    width: 100%;
+    height: 1770px;
+    background-color: #eccc68;
+  }
+  .aside-main .title {
+    color: #485460;
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-weight: 100;
+    font-family: "rosario";
+    text-align: center;
+  }
+  .aside-main .image-list {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    margin: 1rem auto;
+  }
+  .aside-main .image-list .image-list-item {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    list-style: none;
+    background-position: center;
+    background-size: cover;
+  }
+  .aside-main .image-list .image-list-item span {
+    color: #f5f6fa;
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    font-weight: 600;
+    font-family: "roboto";
+  }
+  .aside-main .picture {
+    width: 85%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background-image: url("../image/b.jpg"), linear-gradient(rgba(0, 0, 0, 0.8), rgba(100, 100, 100, 0.9));
+    background-position: center;
+    background-size: cover;
+    margin: 1.5rem auto;
+  }
+  .aside-main .picture h1 {
+    color: #a4b0be;
+    font-size: 3rem;
+    padding: 0.3rem 2rem;
+    font-weight: 900;
+    font-size: "roboto";
+  }
+  .aside-main .picture span {
+    color: #a4b0be;
+    font-size: 1rem;
+    padding: 0.3rem 2rem;
+    font-weight: 900;
+    font-size: "roboto";
+  }
+  .aside-main .picture button {
+    width: 75px;
+    height: 30px;
+    margin: 1rem 1.5rem;
+    font-family: roboto;
+    color: #1e272e;
+    font-size: 1.3rem;
+    padding: 0 0;
+    font-weight: 100;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .aside-main .card-container {
+    width: 96%;
+    height: 300px;
+    margin: 5px auto;
+    background-color: #eccc68;
+  }
+  .aside-main .card-container .card-title {
+    color: #a4b0be;
+    font-size: 2rem;
+    padding: 2rem 2rem;
+    font-weight: 100;
+    font-family: "rosario";
+  }
+  .aside-main .card-container .card-list {
+    width: inherit;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin: 0 auto;
+  }
+  .aside-main .card-container .card-list .card-list-item {
+    width: 240px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    list-style: none;
+    border: 1px solid #2C3A47;
+    position: relative;
+  }
+  .aside-main .card-container .card-list .card-list-item .card-like {
+    width: 28px;
+    height: 28px;
+    border-radius: 100px;
+    position: absolute;
+    background-color: #f5f6fa;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    transition: all 1s ease;
+  }
+  .aside-main .card-container .card-list .card-list-item .card-like:hover {
+    background-color: #eb4d4b;
+  }
+  .aside-main .card-container .card-list .card-list-item .card-like i {
+    line-height: 28px;
+    display: block;
+    margin: 2px 4px;
+    font-size: 20px;
+  }
+  .aside-main .card-container .card-list .card-list-item .card-img {
+    width: 239px;
+    height: 220px;
+    border-bottom: 1px solid #2C3A47;
+    margin: 0 0;
+  }
+  .aside-main .card-container .card-list .card-list-item .card-txt {
+    height: 87px;
+    text-align: center;
+    background-color: #f6e58d;
+    font-size: 1.4rem;
+    padding: 0.3rem;
+    font-family: "roboto";
+  }
+
+  /*end main aside part*/
+  /*start footer aside part*/
+  .footer {
+    width: 100%;
+    height: 205px;
+    background-color: #eccc68;
+    margin-top: 2rem;
+  }
+  .footer .list-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    border-top: 1px solid #3498DB;
+  }
+  .footer .list-container .link-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: start;
+  }
+  .footer .list-container .link-list .link-list-item {
+    width: auto;
+    font-size: 1.1rem;
+    font-family: "rosario";
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  .footer .list-container .social-link-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: start;
+  }
+  .footer .list-container .social-link-list .social-link-item {
+    width: auto;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 1.5rem;
+  }
+  .footer .list-container .social-link-list .social-link-item a {
+    text-decoration: none;
+    color: #3498DB;
+    font-size: 1.5rem;
+    font-family: "rosario";
+  }
+  .footer .list-container .social-link-list .social-link-item i {
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+  }
+  .footer .footer-txt {
+    font-family: "rosario";
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 1150px) {
+  /*start main contianer*/
+  .main-container {
+    width: 60%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 26rem;
+    background-color: #3498DB;
+    margin-top: 2rem;
+    background-position: center;
+    background-size: cover;
+  }
+  .main-container .main-header {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+  }
+  .main-container .main-header .main-title {
+    font-family: "Raleway";
+    color: #16A085;
+  }
+  .main-container .main-header .account-container {
+    width: 100px;
+    height: 35px;
+    display: flex;
+    background-color: #f5f6fa;
+    border-radius: 1rem;
+  }
+  .main-container .main-header .account-container .account-title {
+    line-height: 36px;
+    margin-left: 4px;
+    font-family: "roboto";
+    color: #16A085;
+  }
+  .main-container .main-header .account-container i {
+    font-size: 2rem;
+    line-height: 35px;
+    margin-left: 1rem;
+    color: #B75D5D;
+  }
+  .main-container .search-container {
+    width: 94%;
+    height: 80px;
+    border-radius: 1.5rem;
+    background-color: #f5f6fa;
+    display: flex;
+    align-items: center;
+  }
+  .main-container .search-container .input-container {
+    width: auto;
+    height: 60px;
+    padding: 1.5rem;
+    margin-left: 0.5rem;
+    border-right: 2px solid #485460;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-container .search-container .input-container h2 {
+    font-family: "Roboto";
+  }
+  .main-container .search-container .input-container input {
+    width: 13.5rem;
+    border: none;
+    font-size: 1.5;
+    padding: 1rem 3rem;
+    background-color: #f5f6fa;
+  }
+  .main-container .search-container .input-container input:focus {
+    outline: none;
+  }
+  .main-container .search-container .search-button {
+    width: 17%;
+    height: 3.2rem;
+    background-color: #16A085;
+    color: #f5f6fa;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    font-family: "Roboto";
+    margin-left: 2rem;
+    cursor: pointer;
+  }
+
+  /*end main container*/
+  /*start aside header*/
+  .aside-container {
+    width: 35%;
+    margin: 2rem;
+  }
+
+  .aside-header {
+    width: 100%;
+    height: auto;
+  }
+  .aside-header .nav-bar {
+    height: 6rem;
+    background-color: #3498DB;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .aside-header .nav-bar h1 {
+    color: #f5f6fa;
+    font-size: 2.4rem;
+    padding: 2rem 2rem;
+    font-weight: 100;
+    font-family: "rosario";
+  }
+  .aside-header .nav-bar i {
+    color: #f5f6fa;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    font-weight: 100;
+  }
+  .aside-header .nav-image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    background-image: url("../image/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .aside-header .nav-image h1 {
+    color: #f5f6fa;
+    font-size: 2rem;
+    padding: 2rem 2rem;
+    font-weight: 100;
+    font-family: "roboto";
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+  }
+  .aside-header .nav-image button {
+    width: 129px;
+    height: 40px;
+    color: #000000;
+    font-size: 2rem;
+    padding: 0rem 0rem;
+    font-weight: 100;
+    margin-left: 6rem;
+    border: none;
+    outline: none;
+    border-radius: 0px 20px;
+    font-family: "roboto";
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  /*end aside header*/
+  /*start main aside part*/
+  .aside-main {
+    width: 100%;
+    height: 1350px;
+    background-color: #eccc68;
+  }
+  .aside-main .title {
+    color: #485460;
+    font-size: 3rem;
+    padding: 1rem 0;
+    font-weight: 100;
+    font-family: "rosario";
+    text-align: center;
+  }
+  .aside-main .image-list {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem auto;
+  }
+  .aside-main .image-list .image-list-item {
+    width: 90px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    list-style: none;
+    background-position: center;
+    background-size: cover;
+  }
+  .aside-main .image-list .image-list-item span {
+    color: #f5f6fa;
+    font-size: 1.4rem;
+    padding: 2rem 1rem;
+    font-weight: 600;
+    font-family: "roboto";
+  }
+  .aside-main .picture {
+    width: 85%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background-image: url("../image/b.jpg"), linear-gradient(rgba(0, 0, 0, 0.8), rgba(100, 100, 100, 0.9));
+    background-position: center;
+    background-size: cover;
+    margin: 1.5rem auto;
+  }
+  .aside-main .picture h1 {
+    color: #a4b0be;
+    font-size: 3rem;
+    padding: 0.3rem 2rem;
+    font-weight: 900;
+    font-size: "roboto";
+  }
+  .aside-main .picture span {
+    color: #a4b0be;
+    font-size: 1rem;
+    padding: 0.3rem 2rem;
+    font-weight: 900;
+    font-size: "roboto";
+  }
+  .aside-main .picture button {
+    width: 75px;
+    height: 30px;
+    margin: 1rem 1.5rem;
+    font-family: roboto;
+    color: #1e272e;
+    font-size: 1.3rem;
+    padding: 0 0;
+    font-weight: 100;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .aside-main .card-container {
+    width: 96%;
+    height: 300px;
+    margin: 5px auto;
+    background-color: #eccc68;
+  }
+  .aside-main .card-container .card-title {
+    color: #a4b0be;
+    font-size: 3rem;
+    padding: 2rem 2rem;
+    font-weight: 100;
+    font-family: "rosario";
+  }
+  .aside-main .card-container .card-list {
+    width: inherit;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin: 0 auto;
+  }
+  .aside-main .card-container .card-list .card-list-item {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    list-style: none;
+    border: 1px solid #2C3A47;
+    position: relative;
+  }
+  .aside-main .card-container .card-list .card-list-item .card-like {
+    width: 28px;
+    height: 28px;
+    border-radius: 100px;
+    position: absolute;
+    background-color: #f5f6fa;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    transition: all 1s ease;
+  }
+  .aside-main .card-container .card-list .card-list-item .card-like:hover {
+    background-color: #eb4d4b;
+  }
+  .aside-main .card-container .card-list .card-list-item .card-like i {
+    line-height: 28px;
+    display: block;
+    margin: 2px 4px;
+    font-size: 20px;
+  }
+  .aside-main .card-container .card-list .card-list-item .card-img {
+    width: 249px;
+    height: 220px;
+    border-bottom: 1px solid #2C3A47;
+    margin: 0 0;
+  }
+  .aside-main .card-container .card-list .card-list-item .card-txt {
+    height: 87px;
+    text-align: center;
+    background-color: #f6e58d;
+    font-size: 1.4rem;
+    padding: 0.3rem;
+    font-family: "roboto";
+  }
+
+  /*end main aside part*/
+  /*start footer aside part*/
+  .footer {
+    width: 100%;
+    height: 105px;
+    background-color: #eccc68;
+    margin-top: 2rem;
+  }
+  .footer .list-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
+    border-top: 1px solid #3498DB;
+  }
+  .footer .list-container .link-list {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: start;
+  }
+  .footer .list-container .link-list .link-list-item {
+    width: auto;
+    font-size: 1.1rem;
+    font-family: "rosario";
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  .footer .list-container .social-link-list {
+    width: 32%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: start;
+  }
+  .footer .list-container .social-link-list .social-link-item {
+    width: auto;
+    margin-top: 20px;
+    margin-right: 2px;
+    font-size: 1.2rem;
+  }
+  .footer .list-container .social-link-list .social-link-item a {
+    text-decoration: none;
+    color: #3498DB;
+    font-size: 1.3rem;
+    font-family: "rosario";
+  }
+  .footer .list-container .social-link-list .social-link-item i {
+    font-size: 1.3rem;
+    color: black;
+    cursor: pointer;
+  }
+  .footer .footer-txt {
+    font-family: "rosario";
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 1388px) {
+  /*start main contianer*/
+  .main-container {
+    width: 60%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 26rem;
+    background-color: #3498DB;
+    margin-top: 2rem;
+    background-position: center;
+    background-size: cover;
+  }
+  .main-container .main-header {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+  }
+  .main-container .main-header .main-title {
+    font-family: "Raleway";
+    color: #16A085;
+  }
+  .main-container .main-header .account-container {
+    width: 100px;
+    height: 35px;
+    display: flex;
+    background-color: #f5f6fa;
+    border-radius: 1rem;
+  }
+  .main-container .main-header .account-container .account-title {
+    line-height: 36px;
+    margin-left: 4px;
+    font-family: "roboto";
+    color: #16A085;
+  }
+  .main-container .main-header .account-container i {
+    font-size: 2rem;
+    line-height: 35px;
+    margin-left: 1rem;
+    color: #B75D5D;
+  }
+  .main-container .search-container {
+    width: 80%;
+    height: 80px;
+    border-radius: 1.5rem;
+    background-color: #f5f6fa;
+    display: flex;
+    align-items: center;
+  }
+  .main-container .search-container .input-container {
+    width: auto;
+    height: 60px;
+    padding: 1.5rem;
+    margin-left: 0.5rem;
+    border-right: 2px solid #485460;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-container .search-container .input-container h2 {
+    font-family: "Roboto";
+  }
+  .main-container .search-container .input-container input {
+    width: 13.5rem;
+    border: none;
+    font-size: 1.5;
+    padding: 1rem 3rem;
+    background-color: #f5f6fa;
+  }
+  .main-container .search-container .input-container input:focus {
+    outline: none;
+  }
+  .main-container .search-container .search-button {
+    width: 25%;
+    height: 3.2rem;
+    background-color: #16A085;
+    color: #f5f6fa;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    font-family: "Roboto";
+    margin-left: 4rem;
+    cursor: pointer;
+  }
+
+  /*end main container*/
+  /*start aside header*/
+  .aside-container {
+    width: 35%;
+    margin: 2rem;
+  }
+
+  .aside-header {
+    width: 100%;
+    height: auto;
+  }
+  .aside-header .nav-bar {
+    height: 6rem;
+    background-color: #3498DB;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .aside-header .nav-bar h1 {
+    color: #f5f6fa;
+    font-size: 2.4rem;
+    padding: 2rem 2rem;
+    font-weight: 100;
+    font-family: "rosario";
+  }
+  .aside-header .nav-bar i {
+    color: #f5f6fa;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    font-weight: 100;
+  }
+  .aside-header .nav-image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    background-image: url("../image/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .aside-header .nav-image h1 {
+    color: #f5f6fa;
+    font-size: 2rem;
+    padding: 2rem 2rem;
+    font-weight: 100;
+    font-family: "roboto";
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+  }
+  .aside-header .nav-image button {
+    width: 129px;
+    height: 40px;
+    color: #000000;
+    font-size: 2rem;
+    padding: 0rem 0rem;
+    font-weight: 100;
+    margin-left: 6rem;
+    border: none;
+    outline: none;
+    border-radius: 0px 20px;
+    font-family: "roboto";
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  /*end aside header*/
+  /*start main aside part*/
+  .aside-main {
+    width: 100%;
+    height: 950px;
+    background-color: #eccc68;
+  }
+  .aside-main .title {
+    color: #485460;
+    font-size: 3rem;
+    padding: 1rem 0;
+    font-weight: 100;
+    font-family: "rosario";
+    text-align: center;
+  }
+  .aside-main .image-list {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem auto;
+  }
+  .aside-main .image-list .image-list-item {
+    width: 130px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    list-style: none;
+    background-position: center;
+    background-size: cover;
+  }
+  .aside-main .image-list .image-list-item span {
+    color: #f5f6fa;
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    font-weight: 600;
+    font-family: "roboto";
+  }
+  .aside-main .picture {
+    width: 85%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background-image: url("../image/b.jpg"), linear-gradient(rgba(0, 0, 0, 0.8), rgba(100, 100, 100, 0.9));
+    background-position: center;
+    background-size: cover;
+    margin: 1.5rem auto;
+  }
+  .aside-main .picture h1 {
+    color: #a4b0be;
+    font-size: 3rem;
+    padding: 0.3rem 2rem;
+    font-weight: 900;
+    font-size: "roboto";
+  }
+  .aside-main .picture span {
+    color: #a4b0be;
+    font-size: 1rem;
+    padding: 0.3rem 2rem;
+    font-weight: 900;
+    font-size: "roboto";
+  }
+  .aside-main .picture button {
+    width: 75px;
+    height: 30px;
+    margin: 1rem 1.5rem;
+    font-family: roboto;
+    color: #1e272e;
+    font-size: 1.3rem;
+    padding: 0 0;
+    font-weight: 100;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .aside-main .card-container {
+    width: 96%;
+    height: 300px;
+    margin: 5px auto;
+    background-color: #eccc68;
+  }
+  .aside-main .card-container .card-title {
+    color: #a4b0be;
+    font-size: 3rem;
+    padding: 2rem 2rem;
+    font-weight: 100;
+    font-family: "rosario";
+  }
+  .aside-main .card-container .card-list {
+    width: inherit;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .aside-main .card-container .card-list .card-list-item {
+    width: 150px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    list-style: none;
+    border: 1px solid #2C3A47;
+    position: relative;
+  }
+  .aside-main .card-container .card-list .card-list-item .card-like {
+    width: 28px;
+    height: 28px;
+    border-radius: 100px;
+    position: absolute;
+    background-color: #f5f6fa;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    transition: all 1s ease;
+  }
+  .aside-main .card-container .card-list .card-list-item .card-like:hover {
+    background-color: #eb4d4b;
+  }
+  .aside-main .card-container .card-list .card-list-item .card-like i {
+    line-height: 28px;
+    display: block;
+    margin: 2px 4px;
+    font-size: 20px;
+  }
+  .aside-main .card-container .card-list .card-list-item .card-img {
+    width: 149px;
+    height: 220px;
+    border-bottom: 1px solid #2C3A47;
+    margin: 0 0;
+  }
+  .aside-main .card-container .card-list .card-list-item .card-txt {
+    height: 87px;
+    text-align: center;
+    background-color: #f6e58d;
+    font-size: 1.4rem;
+    padding: 0.3rem;
+    font-family: "roboto";
+  }
+
+  /*end main aside part*/
+  /*start footer aside part*/
+  .footer {
+    width: 100%;
+    height: 105px;
+    background-color: #eccc68;
+    margin-top: 2rem;
+  }
+  .footer .list-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
+    border-top: 1px solid #3498DB;
+  }
+  .footer .list-container .link-list {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: start;
+  }
+  .footer .list-container .link-list .link-list-item {
+    width: auto;
+    font-size: 1.3rem;
+    font-family: "rosario";
+    font-weight: bold;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  .footer .list-container .social-link-list {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: start;
+  }
+  .footer .list-container .social-link-list .social-link-item {
+    width: auto;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  .footer .list-container .social-link-list .social-link-item a {
+    text-decoration: none;
+    color: #3498DB;
+    font-size: 1.2rem;
+    font-family: "rosario";
+  }
+  .footer .list-container .social-link-list .social-link-item i {
+    font-size: 1.2rem;
+    color: black;
+    cursor: pointer;
+  }
+  .footer .footer-txt {
+    font-family: "rosario";
+    font-size: 1.2rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
